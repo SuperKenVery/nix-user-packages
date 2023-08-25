@@ -4,6 +4,10 @@ let
   version = "5.9.18";
 in
 pkgs.stdenv.mkDerivation rec {
+  # Mostly copied from https://github.com/SuperKenVery/nixpkgs-hardenedlinux/blob/main/nix/pkgs/packages/toplevel/feishu/default.nix
+  # But added libgcrypt
+  
+  # Thank you, hardened linux!
   pname = "feishu";
 
   inherit version;
